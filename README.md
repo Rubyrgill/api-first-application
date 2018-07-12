@@ -1,2 +1,5 @@
-# api-first-application
-API Practice Application
+# API RANDOM QUOTE APPLICATION
+```
+(API Practice Application)
+- On button click, generates random quote stored in external API
+```

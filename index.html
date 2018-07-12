@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Favorite Movies</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,11 +15,20 @@
 
     <script type=text/javascript>
 //Variables holding links
-        var apiKey = "p0H5avZwTKmshRGk9FyeKhGA0Kvqp1kt6axjsnlamixRuB7nUq"
-        var urll ="https://robohash.p.mashape.com/index.php?text=mashape"
 
-
-});
+        $(".btn").on("click",function(event){
+       
+        var urll ="https://api.chucknorris.io/jokes/random"
+    
+    $.ajax({
+        url: urll,
+        method: 'GET'
+    }).then(function(response){
+        console.log(response)
+        $(".btn").text(JSON.stringify(response));
+    });
+    })
+   
 
 
     </script>

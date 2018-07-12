@@ -24,8 +24,8 @@
         url: urll,
         method: 'GET'
     }).then(function(response){
-        console.log(response)
-        $(".btn").text(JSON.stringify(response));
+        console.log(response.value)
+        $(".btn").text(JSON.stringify(response.value));
     });
     })
    

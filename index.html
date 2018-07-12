@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Favorite Movies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <script type=text/javascript>
+
+        var apiKey = "p0H5avZwTKmshRGk9FyeKhGA0Kvqp1kt6axjsnlamixRuB7nUq"
+        var urll ="https://robohash.p.mashape.com/index.php?text=mashape"
+
+        unirest.get("https://robohash.p.mashape.com/index.php?text=mashape")
+.header("X-Mashape-Key", "p0H5avZwTKmshRGk9FyeKhGA0Kvqp1kt6axjsnlamixRuB7nUq")
+.header("Accept", "application/json")
+.end(function (result) {
+  console.log(result.status, result.headers, result.body);
+});
+
+// <!-- 
+
+// // // $.ajax
+// // // ({
+// // //     url: 'https://robohash.p.mashape.com/index.php?text=mashape',
+// // //     method: 'GET', 
+// // //     header: {
+// // //        'X-Mashape-Key': 'S2Ln6sPRBImshHDd0zrejLb1EjH4p1m0UfgjsnAJgyFrwxVU24',
+// // //        'Content-type': 'application/x-www-form-rule coded',
+// // //        'Accept': 'application/json'
+// // //     },
+// // //     crossDomain: true,
+// // //     success: function(data) { 
+// // //         console.log(data)
+// // //     } -->
+// }
+
+
+    </script>
+    </div>
+</body>
+
+</html>

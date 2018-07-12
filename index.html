@@ -12,9 +12,9 @@
     <!--Button-->
     <button class="btn">Click Me!</button>
 
-
+    <p id="text"></p>
     <script type=text/javascript>
-//Variables holding links
+//API
 
         $(".btn").on("click",function(event){
        
@@ -25,7 +25,7 @@
         method: 'GET'
     }).then(function(response){
         console.log(response.value)
-        $(".btn").text(JSON.stringify(response.value));
+        $("#text").text(JSON.stringify(response.value));
     });
     })
    
